@@ -56,6 +56,24 @@ h2 {
   color: #1a252f;
 }
 
+.publication-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 6px;
+}
+
+.publication-links a {
+  display: inline-flex;
+  border-bottom: 0;
+}
+
+.publication-links img {
+  display: block;
+  height: 20px;
+  width: auto;
+}
+
 span.highlight {
   background-color: #f4e8c1;
   padding: 2px 4px;
