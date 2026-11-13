@@ -3,446 +3,242 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Zihao Zhang</title>
+  <meta name="author" content="Zihao Zhang">
+  <meta name="description" content="Zihao Zhang — Ph.D. student working on world-action models, safety-oriented learning, and autonomous driving at Southeast University and SLAI.">
+  <meta name="theme-color" content="#f8f7f3">
+  <meta property="og:title" content="Zihao Zhang · Autonomous Driving &amp; Embodied AI">
+  <meta property="og:description" content="Research on world-action models, visual representations, and learning to act safely.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://zizizi-hao.github.io/">
+  <meta property="og:image" content="https://zizizi-hao.github.io/images/myphoto.jpg">
+  <title>Zihao Zhang · Autonomous Driving &amp; Embodied AI</title>
+  <link rel="canonical" href="https://zizizi-hao.github.io/">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="stylesheet.css">
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header container">
+    <a class="wordmark" href="#top" aria-label="Zihao Zhang, back to top"><span class="monogram" aria-hidden="true">Z.</span><span>Zihao Zhang</span></a>
+    <nav aria-label="Main navigation">
+      <a href="#selected-work">Selected work</a>
+      <a href="#publications">Publications</a>
+      <a href="#about">About</a>
+    </nav>
+  </header>
+  <main id="main" class="container">
+    <section class="hero" id="top" aria-labelledby="intro-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="small-square" aria-hidden="true"></span> Autonomous driving &amp; embodied AI</p>
+        <h1 id="intro-title">Zihao Zhang <span lang="zh">张子豪</span></h1>
+        <p class="hero-statement">Understanding the world.<br>Learning to act safely.</p>
+        <p class="hero-description">I study <strong>world-action models</strong> and <strong>safety-oriented learning</strong> for autonomous driving, connecting visual representations, world modeling, and decision-making.</p>
+        <p class="affiliation">Ph.D. student at <a href="https://www.seu.edu.cn/">Southeast University</a> &amp; <a href="https://www.slai.edu.cn/en">SLAI</a>.</p>
+        <div class="contact-links" aria-label="Contact and profiles">
+          <a class="button button-primary" href="mailto:zihao_zhang@seu.edu.cn"><svg viewBox="0 0 20 20" aria-hidden="true"><rect x="2.5" y="4" width="15" height="12" rx="2"/><path d="m3 5 7 5 7-5"/></svg> Email me</a>
+          <a class="button" href="https://scholar.google.com/citations?user=R2Brvm4AAAAJ&amp;hl=en">Google Scholar <span aria-hidden="true">↗</span></a>
+          <a class="button" href="https://github.com/zizizi-hao">GitHub <span aria-hidden="true">↗</span></a>
+          <a class="button" href="https://github.com/Zizizi-hao/Zizizi-hao/blob/main/zzh_cv_20261112.pdf">CV <span aria-hidden="true">↗</span></a>
+        </div>
+        <p class="research-keywords">World-action models <span aria-hidden="true">/</span> Safe policy learning <span aria-hidden="true">/</span> End-to-end driving</p>
+      </div>
+      <figure class="portrait">
+        <div class="portrait-frame"><img src="images/myphoto.jpg" alt="Zihao Zhang standing beside a car" width="280" height="320" fetchpriority="high"></div>
+        <figcaption><span class="portrait-rule" aria-hidden="true"></span> Exploring intelligence in the physical world.</figcaption>
+      </figure>
+    </section>
 
-<table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;background-color:#faf9f6;padding:40px 20px;">
-  <tbody>
-    <tr style="padding:0px">
-      <td style="padding:0px;border-top:3px solid #26288c;">
+    <section class="selected-work section" id="selected-work" aria-labelledby="selected-title">
+      <div class="section-heading">
+        <div><p class="eyebrow">Research in focus</p><h2 id="selected-title">Selected work</h2></div>
+        <a class="text-link" href="#publications">All publications <span aria-hidden="true">↘</span></a>
+      </div>
+      <div class="project-grid">
+        <article class="project-card">
+          <a class="project-image" href="#paper-negwam" aria-label="Read about NegWAM"><img src="images/preview-negwam.svg" alt="Concept illustration of selected and negative candidate trajectories at a road junction" width="960" height="600"><span class="illustration-label">Concept illustration</span></a>
+          <div class="project-copy">
+            <p class="project-category"><span>01</span> Safety learning</p>
+            <h3><a href="https://arxiv.org/abs/2611.08111">NegWAM</a></h3>
+            <p>Learning safety boundaries through negative-aware planning in a unified world-action model.</p>
+            <div class="project-links"><a href="https://arxiv.org/abs/2611.08111">Paper <span aria-hidden="true">↗</span></a><a href="https://github.com/Zizizi-hao/NegWAM">Code <span aria-hidden="true">↗</span></a></div>
+          </div>
+        </article>
+        <article class="project-card">
+          <a class="project-image" href="#paper-vira" aria-label="Read about ViRA"><img src="images/preview-vira.svg" alt="Concept illustration connecting a driving scene, visual features, and a planned trajectory" width="960" height="600"><span class="illustration-label">Concept illustration</span></a>
+          <div class="project-copy">
+            <p class="project-category"><span>02</span> Visual representations</p>
+            <h3><a href="https://opendrivelab.com/ViRA/">ViRA</a></h3>
+            <p>Investigating when better visual representations translate into better end-to-end driving.</p>
+            <div class="project-links"><a href="https://opendrivelab.com/ViRA/">Project <span aria-hidden="true">↗</span></a><a href="https://arxiv.org/abs/2610.09695">Paper <span aria-hidden="true">↗</span></a><a href="https://github.com/OpenDriveLab/ViRA">Code <span aria-hidden="true">↗</span></a></div>
+          </div>
+        </article>
+        <article class="project-card">
+          <a class="project-image" href="#paper-simvta" aria-label="Read about SimVTA"><img src="images/preview-simvta.svg" alt="Concept illustration matching driving video frames with points along a trajectory" width="960" height="600"><span class="illustration-label">Concept illustration</span></a>
+          <div class="project-copy">
+            <p class="project-category"><span>03</span> World-action models</p>
+            <h3><a href="https://opendrivelab.com/SimVTA/">SimVTA</a></h3>
+            <p>Aligning video and trajectories through simulation for driving world-action models.</p>
+            <div class="project-links"><a href="https://opendrivelab.com/SimVTA/">Project <span aria-hidden="true">↗</span></a><a href="https://arxiv.org/abs/2610.13781">Paper <span aria-hidden="true">↗</span></a><a href="https://github.com/OpenDriveLab/SimVTA">Code <span aria-hidden="true">↗</span></a></div>
+          </div>
+        </article>
+      </div>
+    </section>
 
-        <!-- Header Section -->
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-          <tbody>
-            <tr style="padding:0px">
-              <td style="padding:2.5%;width:63%;vertical-align:middle">
-                <p class="name" style="text-align: center;">
-                  Zihao Zhang (张子豪)
-                </p>
-                <p style="text-align:center">
-                  <a href="mailto:zihao_zhang@seu.edu.cn">Email</a> &nbsp;/&nbsp;
-                  <a href="https://scholar.google.com/citations?user=R2Brvm4AAAAJ&hl=en">Google Scholar</a> &nbsp;/&nbsp;
-                  <a href="https://github.com/zizizi-hao">GitHub</a>
-                </p>
-                <p>
-                  I am a third-year Ph.D. student at <a href="https://www.seu.edu.cn/">Southeast University</a> and <a href="#">Shenzhen Loop Area Institution (SLAI)</a>.
-                  My tutor in Southeast University is <a href="https://tc.seu.edu.cn/2023/0330/c25722a440232/page.htm">Prof. Ziyuan Pu</a>. 
-                  In SLAI first year, I am supervised by <a href="https://scholar.google.com/citations?user=R2Brvm4AAAAJ&hl=en">Prof. Hongyang Li</a>. 
-                  And now I am supervised by <a href="https://scholar.google.com/citations?hl=en&user=aXdjxb4AAAAJ">Prof. Ping Luo</a>.
-                </p>
-                <p>
-                  Prior to joining Southeast University, I earned my M.S. (2024) in Transportation from <a href="https://www.hnu.edu.cn/">Hunan University</a>,
-                  supervised by <a href="https://grzy.hnu.edu.cn/site/index/liuchenhui">Prof. Chenhui Liu</a>.
-                </p>
-                <p>
-                  My research focuses on autonomous driving and Embodied AI, particularly End-to-End Autonomous Driving, 3D object detection, trajectory prediction, and driving behavior analysis.
-                </p>
-              </td>
-              <td style="padding:2.5%;width:40%;max-width:40%">
-                <div style="width:100%;max-width:280px;margin:0 auto;aspect-ratio:1/1;overflow:hidden;border:3px solid #d4d0c5;box-shadow:0 4px 8px rgba(0,0,0,0.1);">
-                  <img style="width:100%;height:100%;object-fit:cover;" alt="profile photo" src="images/myphoto.jpg">
-                </div>
-              </td>
-            </tr>
-          </tbody>
-        </table>
+    <section class="news section" id="news" aria-labelledby="news-title">
+      <div class="section-heading"><div><p class="eyebrow">Latest updates</p><h2 id="news-title">News</h2></div></div>
+      <ol class="news-list">
+        <li><time datetime="2026-11-06">Nov 2026</time><p>Released <a href="https://arxiv.org/abs/2611.08111">NegWAM</a> on arXiv — negative-aware planning for safer end-to-end driving.</p></li>
+        <li><time datetime="2026-10-10">Oct 2026</time><p>Released <a href="https://arxiv.org/abs/2610.13781">SimVTA</a> — simulation-grounded video-trajectory alignment for driving world-action models.</p></li>
+        <li><time datetime="2026-10-07">Oct 2026</time><p>Released <a href="https://arxiv.org/abs/2610.09695">ViRA</a> — a study of visual representations for end-to-end autonomous driving.</p></li>
+      </ol>
+      <details class="earlier-news">
+        <summary>Earlier updates <span aria-hidden="true">+</span></summary>
+        <ol class="news-list">
+          <li><time datetime="2025-07">Jul 2025</time><p><a href="https://arxiv.org/abs/2410.07758">Roadside Monocular 3D Detection via Cross-View Semantic Alignment</a> was accepted to ITSC 2025.</p></li>
+          <li><time datetime="2025-04">Apr 2025</time><p>My project on federated learning for collaborative perception received sponsorship from Jiangsu Province.</p></li>
+          <li><time datetime="2024-09">Sep 2024</time><p>Two papers were recommended for presentation at the TRB Annual Meeting.</p></li>
+        </ol>
+      </details>
+    </section>
 
-        <!-- News Section -->
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-          <tbody>
-            <tr>
-              <td style="padding:20px;width:100%;vertical-align:middle">
-                <h2>News</h2>
-                <ul>
-                  <li><span class="highlight">November 6, 2026:</span> We released our paper "<a href="https://arxiv.org/abs/2611.08111">Reinforcing End-to-End Autonomous Driving Safety via Negative-Aware Planning in a Unified World-Action Model</a>" at arxiv.</li>
-                  <li><span class="highlight">October 10, 2026:</span> We released our paper "<a href="https://arxiv.org/abs/2610.13781">SimVTA: Simulation-Grounded Video-Trajectory Alignment for Driving World Action Models</a>" at arxiv.</li>
-                  <li><span class="highlight">October 7, 2026:</span> We released our paper "<a href="https://arxiv.org/abs/2610.09695">Do Better Visual Representations Always Lead to Better End-to-End Autonomous Driving?</a>" at arxiv.</li>
-                  <li><span class="highlight">July, 2025:</span> Our paper "<a href="https://arxiv.org/abs/2410.07758">Roadside Monocular 3D Detection via Cross-View Semantic Alignment</a>" was accepted by ITSC 2025.</li>
-                  <li><span class="highlight">April, 2025:</span> My project on federated learning for collaborative perception was sponsored by Jiangsu Province.</li>
-                  <li><span class="highlight">September, 2024:</span> Two papers recommended to present at TRB Annual Meeting.</li>
-                </ul>
-              </td>
-            </tr>
-          </tbody>
-        </table>
+    <section class="publications section" id="publications" aria-labelledby="publications-title">
+      <div class="section-heading">
+        <div><p class="eyebrow">Research archive</p><h2 id="publications-title">Publications</h2></div>
+        <a class="text-link" href="https://scholar.google.com/citations?user=R2Brvm4AAAAJ&amp;hl=en">Google Scholar <span aria-hidden="true">↗</span></a>
+      </div>
+      <div class="publication-group">
+        <div class="group-heading"><h3>Autonomous driving</h3><p>World models, perception, planning, and safety.</p></div>
+        <div class="paper-list">
+          <article class="paper" id="paper-negwam">
+            <a class="paper-image" href="images/Negwam.jpg" aria-label="View the full figure for Reinforcing End-to-End Autonomous Driving Safety via Negative-Aware Planning in a Unified World-Action Model"><img src="images/Negwam.jpg" alt="Reinforcing End-to-End Autonomous Driving Safety via Negative-Aware Planning in a Unified World-Action Model — research figure" loading="lazy" decoding="async"></a>
+            <div class="paper-body">
+              <p class="paper-venue"><span class="venue-tag">Preprint</span> <span class="venue-year">· 2026</span></p>
+              <h4><a href="https://arxiv.org/abs/2611.08111">Reinforcing End-to-End Autonomous Driving Safety via Negative-Aware Planning in a Unified World-Action Model</a></h4>
+              <p class="authors"><strong>Zihao Zhang</strong>, Xinyu Zhang, Bing Zeng, Xingyu Chen, Zhenning Li, Bin Yu, and Ziyuan Pu.</p>
+              <div class="paper-links"><a href="https://arxiv.org/abs/2611.08111">Paper <span aria-hidden="true">↗</span></a> <a href="https://github.com/Zizizi-hao/NegWAM">Code <span aria-hidden="true">↗</span></a></div>
+            </div>
+          </article>
+          <article class="paper" id="paper-vira">
+            <a class="paper-image" href="images/ViRA.jpg" aria-label="View the full figure for Do Better Visual Representations Always Lead to Better End-to-End Autonomous Driving?"><img src="images/ViRA.jpg" alt="Do Better Visual Representations Always Lead to Better End-to-End Autonomous Driving? — research figure" loading="lazy" decoding="async"></a>
+            <div class="paper-body">
+              <p class="paper-venue"><span class="venue-tag">Preprint</span> <span class="venue-year">· 2026</span></p>
+              <h4><a href="https://arxiv.org/abs/2610.09695">Do Better Visual Representations Always Lead to Better End-to-End Autonomous Driving?</a></h4>
+              <p class="authors"><strong>Zihao Zhang</strong>, Haochen Tian, Tianyu Li, Changhui Jing, Jingliang He, Naisheng Ye, Ziyuan Pu, and Zhenjie Yang.</p>
+              <div class="paper-links"><a href="https://arxiv.org/abs/2610.09695">Paper <span aria-hidden="true">↗</span></a> <a href="https://opendrivelab.com/ViRA/">Project <span aria-hidden="true">↗</span></a> <a href="https://github.com/OpenDriveLab/ViRA">Code <span aria-hidden="true">↗</span></a> <a href="https://mp.weixin.qq.com/s/upeBFDGHDE9GjhrqY6wizQ">Blog <span aria-hidden="true">↗</span></a></div>
+            </div>
+          </article>
+          <article class="paper" id="paper-simvta">
+            <a class="paper-image" href="images/SimVTA.png" aria-label="View the full figure for Simulation-Grounded Video-Trajectory Alignment for Driving World Action Models"><img src="images/SimVTA.png" alt="Simulation-Grounded Video-Trajectory Alignment for Driving World Action Models — research figure" loading="lazy" decoding="async"></a>
+            <div class="paper-body">
+              <p class="paper-venue"><span class="venue-tag">Preprint</span> <span class="venue-year">· 2026</span></p>
+              <h4><a href="https://opendrivelab.com/SimVTA/">Simulation-Grounded Video-Trajectory Alignment for Driving World Action Models</a></h4>
+              <p class="authors">Changhui Jing, Haochen Tian, Hongchen Li, Tianyu Li, Caojun Wang,  <strong>Zihao Zhang</strong>, Yanhao Liu, Chengen Xie, Bailin Li, Hao Zhao, and Zhenjie Yang.</p>
+              <div class="paper-links"><a href="https://arxiv.org/abs/2610.13781">Paper <span aria-hidden="true">↗</span></a> <a href="https://opendrivelab.com/SimVTA/">Project <span aria-hidden="true">↗</span></a> <a href="https://github.com/OpenDriveLab/SimVTA">Code <span aria-hidden="true">↗</span></a> <a href="https://mp.weixin.qq.com/s/UR5UkPqMDLQ3At5bp1dFPQ">Blog <span aria-hidden="true">↗</span></a></div>
+            </div>
+          </article>
+          <article class="paper">
+            <a class="paper-image" href="images/2025_height_former.png" aria-label="View the full figure for Roadside Monocular 3D Detection via Cross-View Semantic Alignment"><img src="images/2025_height_former.png" alt="Roadside Monocular 3D Detection via Cross-View Semantic Alignment — research figure" loading="lazy" decoding="async"></a>
+            <div class="paper-body">
+              <p class="paper-venue">Transportation Research Board (TRB) / IEEE ITSC <span class="venue-year">· 2025</span></p>
+              <h4><a href="https://arxiv.org/abs/2410.07758">Roadside Monocular 3D Detection via Cross-View Semantic Alignment</a></h4>
+              <p class="authors">Pei Liu, <strong>Zihao Zhang</strong>, Haipeng Liu, Yiqun Li, Junlan Chen, Ziyuan Pu.</p>
+              <div class="paper-links"><a href="https://ieeexplore.ieee.org/abstract/document/11423748/">Paper <span aria-hidden="true">↗</span></a> <a href="https://arxiv.org/abs/2410.07758">arXiv <span aria-hidden="true">↗</span></a></div>
+            </div>
+          </article>
+          <article class="paper">
+            <a class="paper-image" href="images/2025_risk_dit.png" aria-label="View the full figure for Risk-Informed Diffusion Transformer for Long-Tail Trajectory Prediction in the Crash Scenario"><img src="images/2025_risk_dit.png" alt="Risk-Informed Diffusion Transformer for Long-Tail Trajectory Prediction in the Crash Scenario — research figure" loading="lazy" decoding="async"></a>
+            <div class="paper-body">
+              <p class="paper-venue">Transportation Research Board (TRB) <span class="venue-year">· 2025</span></p>
+              <h4><a href="https://arxiv.org/abs/2501.16349">Risk-Informed Diffusion Transformer for Long-Tail Trajectory Prediction in the Crash Scenario</a></h4>
+              <p class="authors">Junlan Chen, Pei Liu, <strong>Zihao Zhang</strong>, Hongyi Zhao, Ziyuan Pu.</p>
+              <div class="paper-links"><a href="https://arxiv.org/abs/2501.16349">Paper <span aria-hidden="true">↗</span></a></div>
+            </div>
+          </article>
+        </div>
+      </div>
+      <div class="publication-group">
+        <div class="group-heading"><h3>Transportation &amp; behavior</h3><p>Earlier work on mobility, human behavior, and traffic safety.</p></div>
+        <div class="paper-list">
+          <article class="paper">
+            <a class="paper-image" href="images/optmize.png" aria-label="View the full figure for Optimizing charging station locations for mixed traffic of electric and gasoline vehicles: a stochastic user equilibrium approach"><img src="images/optmize.png" alt="Optimizing charging station locations for mixed traffic of electric and gasoline vehicles: a stochastic user equilibrium approach — research figure" loading="lazy" decoding="async"></a>
+            <div class="paper-body">
+              <p class="paper-venue">Transportation Research Part E: Logistics and Transportation Review <span class="venue-year">· 2025</span></p>
+              <h4><a href="https://www.sciencedirect.com/science/article/abs/pii/S136655452500479X">Optimizing charging station locations for mixed traffic of electric and gasoline vehicles: a stochastic user equilibrium approach</a></h4>
+              <p class="authors">Bing Zeng, Xinlian Yu, <strong>Zihao Zhang</strong>, Ziyuan Pu.</p>
+              <div class="paper-links"><a href="https://www.sciencedirect.com/science/article/abs/pii/S136655452500479X">Paper <span aria-hidden="true">↗</span></a></div>
+            </div>
+          </article>
+          <article class="paper">
+            <a class="paper-image" href="images/FDR_2_speeding.jpg" aria-label="View the full figure for Identification of the factors influencing speeding behaviour of food delivery e-bikers in China with the naturalistic cycling data"><img src="images/FDR_2_speeding.jpg" alt="Identification of the factors influencing speeding behaviour of food delivery e-bikers in China with the naturalistic cycling data — research figure" loading="lazy" decoding="async"></a>
+            <div class="paper-body">
+              <p class="paper-venue">International Journal of Occupational Safety and Ergonomics <span class="venue-year">· 2025</span></p>
+              <h4><a href="https://www.tandfonline.com/doi/full/10.1080/10803548.2024.2393027">Identification of the factors influencing speeding behaviour of food delivery e-bikers in China with the naturalistic cycling data</a></h4>
+              <p class="authors"><strong>Zihao Zhang</strong> and Chenhui Liu.</p>
+              <div class="paper-links"><a href="https://www.tandfonline.com/doi/full/10.1080/10803548.2024.2393027">Paper <span aria-hidden="true">↗</span></a></div>
+            </div>
+          </article>
+          <article class="paper">
+            <a class="paper-image" href="images/PA_hou.png" aria-label="View the full figure for Exploration of the Characteristics of Elderly-Driver-Involved Single-Vehicle Hit-Fixed-Object Crashes in Pennsylvania, USA"><img src="images/PA_hou.png" alt="Exploration of the Characteristics of Elderly-Driver-Involved Single-Vehicle Hit-Fixed-Object Crashes in Pennsylvania, USA — research figure" loading="lazy" decoding="async"></a>
+            <div class="paper-body">
+              <p class="paper-venue">Applied Sciences <span class="venue-year">· 2025</span></p>
+              <h4><a href="https://www.mdpi.com/2076-3417/14/19/8625">Exploration of the Characteristics of Elderly-Driver-Involved Single-Vehicle Hit-Fixed-Object Crashes in Pennsylvania, USA</a></h4>
+              <p class="authors">Xuerui Hou, <strong>Zihao Zhang</strong>, Xue Su, Chenhui Liu.</p>
+              <div class="paper-links"><a href="https://www.mdpi.com/2076-3417/14/19/8625">Paper <span aria-hidden="true">↗</span></a></div>
+            </div>
+          </article>
+          <article class="paper">
+            <a class="paper-image" href="images/PA_elder.png" aria-label="View the full figure for Exploration of the Heterogeneity among Elderly Drivers by Analyzing Traffic Crash Data: A Case Study in Pennsylvania, USA"><img src="images/PA_elder.png" alt="Exploration of the Heterogeneity among Elderly Drivers by Analyzing Traffic Crash Data: A Case Study in Pennsylvania, USA — research figure" loading="lazy" decoding="async"></a>
+            <div class="paper-body">
+              <p class="paper-venue">SAE International <span class="venue-year">· 2024</span></p>
+              <h4><a href="https://doi.org/10.4271/09-12-03-0008">Exploration of the Heterogeneity among Elderly Drivers by Analyzing Traffic Crash Data: A Case Study in Pennsylvania, USA</a></h4>
+              <p class="authors"><strong>Zihao Zhang</strong> and Chenhui Liu.</p>
+              <div class="paper-links"><a href="https://doi.org/10.4271/09-12-03-0008">Paper <span aria-hidden="true">↗</span></a></div>
+            </div>
+          </article>
+          <article class="paper">
+            <a class="paper-image" href="images/FDR_1.png" aria-label="View the full figure for Exploration of Riding Behaviors of Food Delivery Riders: A Naturalistic Cycling Study in Changsha, China"><img src="images/FDR_1.png" alt="Exploration of Riding Behaviors of Food Delivery Riders: A Naturalistic Cycling Study in Changsha, China — research figure" loading="lazy" decoding="async"></a>
+            <div class="paper-body">
+              <p class="paper-venue">Sustainability <span class="venue-year">· 2023</span></p>
+              <h4><a href="https://doi.org/10.3390/su152316227">Exploration of Riding Behaviors of Food Delivery Riders: A Naturalistic Cycling Study in Changsha, China</a></h4>
+              <p class="authors"><strong>Zihao Zhang</strong> and Chenhui Liu.</p>
+              <div class="paper-links"><a href="https://doi.org/10.3390/su152316227">Paper <span aria-hidden="true">↗</span></a></div>
+            </div>
+          </article>
+          <article class="paper">
+            <a class="paper-image" href="images/NHTS.jpg" aria-label="View the full figure for Why the Elderly Do Not Travel: An Analysis Based on the 2017 NHTS Data"><img src="images/NHTS.jpg" alt="Why the Elderly Do Not Travel: An Analysis Based on the 2017 NHTS Data — research figure" loading="lazy" decoding="async"></a>
+            <div class="paper-body">
+              <p class="paper-venue">CICTP <span class="venue-year">· 2023</span></p>
+              <h4><a href="https://doi.org/10.1061/9780784485040.053">Why the Elderly Do Not Travel: An Analysis Based on the 2017 NHTS Data</a></h4>
+              <p class="authors"><strong>Zihao Zhang</strong> and Chenhui Liu.</p>
+              <div class="paper-links"><a href="https://doi.org/10.1061/9780784485040.053">Paper <span aria-hidden="true">↗</span></a></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
 
-        <!-- Publications Section -->
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-          <tbody>
-            <tr>
-              <td style="padding:20px;width:100%;vertical-align:middle">
-                <h2>Publications</h2>
-              </td>
-            </tr>
-          </tbody>
-        </table>
+    <section class="about section" id="about" aria-labelledby="about-title">
+      <div class="section-heading"><div><p class="eyebrow">Background &amp; directions</p><h2 id="about-title">A little about me</h2></div></div>
+      <div class="about-grid">
+        <div class="about-copy">
+          <p>I am a third-year Ph.D. student at <a href="https://www.seu.edu.cn/">Southeast University</a> and the <a href="https://www.slai.edu.cn/en">Shenzhen Loop Area Institute (SLAI)</a>. My advisor at Southeast University is <a href="https://tc.seu.edu.cn/2023/0330/c25722a440232/page.htm">Prof. Ziyuan Pu</a>. At SLAI, I worked with <a href="https://www.hongyang.li/">Prof. Hongyang Li</a> in my first year and am now supervised by <a href="https://scholar.google.com/citations?hl=en&amp;user=aXdjxb4AAAAJ">Prof. Ping Luo</a>.</p>
+          <p>I received my M.S. in Transportation from <a href="https://www.hnu.edu.cn/">Hunan University</a> in 2024, advised by <a href="https://grzy.hnu.edu.cn/site/index/liuchenhui">Prof. Chenhui Liu</a>. My earlier research on driving behavior and traffic safety informs my current work on autonomous systems.</p>
+          <div class="research-note"><h3>Looking ahead</h3><p>I am interested in 3D and 4D world-action models, reinforcement learning and post-training for safety, and adapting agent harnesses to physical tasks such as driving and manipulation.</p></div>
+        </div>
+        <div class="education" aria-label="Education">
+          <h3>Education</h3>
+          <ol>
+            <li><span class="education-date">Current</span><h4>Southeast University</h4><p>Ph.D. student · with SLAI</p><p class="education-detail">Autonomous driving &amp; embodied AI</p></li>
+            <li><span class="education-date">2024</span><h4>Hunan University</h4><p>M.S. in Transportation</p><p class="education-detail">Advisor: Prof. Chenhui Liu</p></li>
+          </ol>
+        </div>
+      </div>
+    </section>
+  </main>
 
-        <!-- Autonomous Driving -->
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-          <tbody>
-            <tr>
-              <td style="padding:20px;width:100%;vertical-align:middle">
-                <p style="font-size:16px;font-weight:600;color:#26288c;border-bottom:1px solid #d4d0c5;padding-bottom:8px;margin-bottom:10px;">
-                  Autonomous Driving
-                </p>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-          <tbody>
-            <!-- AD Paper -->
-            <tr>
-              <td style="padding:10px 15px 10px 0;width:35%;vertical-align:middle">
-                <img src="images/Negwam.jpg" style="width:100%;border:1px solid #d4d0c5;" alt="Negwam teaser">
-              </td>
-              <td style="padding:10px 0 10px 15px;width:65%;vertical-align:middle">
-                <a href="https://arxiv.org/abs/2611.08111">
-                  <span class="papertitle">Reinforcing End-to-End Autonomous Driving Safety via Negative-Aware Planning in a Unified World-Action Model</span>
-                </a>
-                <br>
-                <strong>Zihao Zhang</strong>, Xinyu Zhang, Bing Zeng, Xingyu Chen, Zhenning Li, Bin Yu, and Ziyuan Pu.
-                <br>
-                <em>preprint</em>, 2026
-                <br>
-                <div class="publication-links">
-                  <a href="https://arxiv.org/abs/2611.08111">
-                    <img src="https://img.shields.io/badge/arXiv-B31B1B?style=flat&amp;logo=arxiv&amp;logoColor=white" alt="Paper on arXiv" height="20">
-                  </a>
-                  <a href="https://github.com/Zizizi-hao/NegWAM">
-                    <img src="https://img.shields.io/badge/GitHub-181717?style=flat&amp;logo=github&amp;logoColor=white" alt="Code on GitHub" height="20">
-                  </a>
-                </div>
-              </td>
-            </tr>
-
-            <!-- AD Paper -->
-            <tr>
-              <td style="padding:10px 15px 10px 0;width:35%;vertical-align:middle">
-                <img src="images/ViRA.jpg" style="width:100%;border:1px solid #d4d0c5;" alt="ViRA teaser">
-              </td>
-              <td style="padding:10px 0 10px 15px;width:65%;vertical-align:middle">
-                <a href="https://arxiv.org/abs/2610.09695">
-                  <span class="papertitle">Do Better Visual Representations Always Lead to Better End-to-End Autonomous Driving?</span>
-                </a>
-                <br>
-                <strong>Zihao Zhang</strong>, Haochen Tian, Tianyu Li, Changhui Jing, Jingliang He, Naisheng Ye, Ziyuan Pu, and Zhenjie Yang.
-                <br>
-                <em>preprint</em>, 2026
-                <br>
-                <div class="publication-links">
-                  <a href="https://arxiv.org/abs/2610.09695">
-                    <img src="https://img.shields.io/badge/arXiv-B31B1B?style=flat&amp;logo=arxiv&amp;logoColor=white" alt="Paper on arXiv" height="20">
-                  </a>
-                  <a href="https://opendrivelab.com/ViRA/">
-                    <img src="https://img.shields.io/badge/Project_Page-007EC6?style=flat" alt="Project Page" height="20">
-                  </a>
-                  <a href="https://github.com/OpenDriveLab/ViRA">
-                    <img src="https://img.shields.io/badge/GitHub-181717?style=flat&amp;logo=github&amp;logoColor=white" alt="Code on GitHub" height="20">
-                  </a>
-                  <a href="https://mp.weixin.qq.com/s/upeBFDGHDE9GjhrqY6wizQ">
-                    <img src="https://img.shields.io/badge/Blog-00629B?style=flat&amp;logo=readthedocs&amp;logoColor=white" alt="Blog" height="20">
-                  </a>
-                </div>
-              </td>
-            </tr>
-
-            <!-- AD Paper 1 -->
-            <tr>
-              <td style="padding:10px 15px 10px 0;width:35%;vertical-align:middle">
-                <img src="images/SimVTA.png" style="width:100%;border:1px solid #d4d0c5;" alt="SimVTA teaser">
-              </td>
-              <td style="padding:10px 0 10px 15px;width:65%;vertical-align:middle">
-                <a href="https://opendrivelab.com/SimVTA/">
-                  <span class="papertitle">Simulation-Grounded Video-Trajectory Alignment for Driving World Action Models</span>
-                </a>
-                <br>
-                Changhui Jing, Haochen Tian, Hongchen Li, Tianyu Li, Caojun Wang,  <strong>Zihao Zhang</strong>, Yanhao Liu, Chengen Xie, Bailin Li, Hao Zhao, and Zhenjie Yang.
-                <br>
-                <em>preprint</em>, 2026
-                <br>
-                <div class="publication-links">
-                  <a href="https://arxiv.org/abs/2610.13781">
-                    <img src="https://img.shields.io/badge/arXiv-B31B1B?style=flat&amp;logo=arxiv&amp;logoColor=white" alt="Paper on arXiv" height="20">
-                  </a>
-                  <a href="https://opendrivelab.com/SimVTA/">
-                    <img src="https://img.shields.io/badge/Project_Page-007EC6?style=flat" alt="Project Page" height="20">
-                  </a>
-                  <a href="https://github.com/OpenDriveLab/SimVTA">
-                    <img src="https://img.shields.io/badge/GitHub-181717?style=flat&amp;logo=github&amp;logoColor=white" alt="Code on GitHub" height="20">
-                  </a>
-                  <a href="https://mp.weixin.qq.com/s/UR5UkPqMDLQ3At5bp1dFPQ">
-                    <img src="https://img.shields.io/badge/Blog-00629B?style=flat&amp;logo=readthedocs&amp;logoColor=white" alt="Blog" height="20">
-                  </a>
-                </div>
-              </td>
-            </tr>
-
-            <!-- AD Paper 1 -->
-            <tr>
-              <td style="padding:10px 15px 10px 0;width:35%;vertical-align:middle">
-                <img src="images/2025_height_former.png" style="width:100%;border:1px solid #d4d0c5;" alt="HeightFormer teaser">
-              </td>
-              <td style="padding:10px 0 10px 15px;width:65%;vertical-align:middle">
-                <a href="https://arxiv.org/abs/2410.07758">
-                  <span class="papertitle">Roadside Monocular 3D Detection via Cross-View Semantic Alignment</span>
-                </a>
-                <br>
-                Pei Liu, <strong>Zihao Zhang</strong>, Haipeng Liu, Yiqun Li, Junlan Chen, Ziyuan Pu.
-                <br>
-                <em>Transportation Research Board (TRB) / IEEE ITSC</em>, 2025
-                <br>
-                <div class="publication-links">
-                  <a href="https://ieeexplore.ieee.org/abstract/document/11423748/">
-                    <img src="https://img.shields.io/badge/Paper-00629B?style=flat&amp;logoColor=white"
-                        alt="Paper" height="20">
-                  </a>
-                </div>
-              </td>
-            </tr>
-
-            <!-- AD Paper 2 -->
-            <tr>
-              <td style="padding:10px 15px 10px 0;width:35%;vertical-align:middle">
-                <img src="images/2025_risk_dit.png" style="width:100%;border:1px solid #d4d0c5;" alt="Risk-DiT teaser">
-              </td>
-              <td style="padding:10px 0 10px 15px;width:65%;vertical-align:middle">
-                <a href="https://arxiv.org/abs/2501.16349">
-                  <span class="papertitle">Risk-Informed Diffusion Transformer for Long-Tail Trajectory Prediction in the Crash Scenario</span>
-                </a>
-                <br>
-                Junlan Chen, Pei Liu, <strong>Zihao Zhang</strong>, Hongyi Zhao, Ziyuan Pu.
-                <br>
-                <em>Transportation Research Board (TRB)</em>, 2025
-                <br>
-                <div class="publication-links">
-                  <a href="https://arxiv.org/abs/2501.16349">
-                    <img src="https://img.shields.io/badge/arXiv-B31B1B?style=flat&amp;logo=arxiv&amp;logoColor=white" alt="Paper on arXiv" height="20">
-                  </a>
-                </div>
-              </td>
-            </tr>
-
-          </tbody>
-        </table>
-
-        <!-- Traffic Agent Behavior Analysis -->
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;margin-top:20px;">
-          <tbody>
-            <tr>
-              <td style="padding:20px;width:100%;vertical-align:middle">
-                <p style="font-size:16px;font-weight:600;color:#26288c;border-bottom:1px solid #d4d0c5;padding-bottom:8px;margin-bottom:10px;">
-                  Traffic Agent Behavior Analysis
-                </p>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-          <tbody>
-
-            <!-- Behavior Paper 1 -->
-            <tr>
-              <td style="padding:10px 15px 10px 0;width:35%;vertical-align:middle">
-                <img src="images/optmize.png" style="width:100%;border:1px solid #d4d0c5;" alt="Optimizing charging station locations teaser">
-              </td>
-              <td style="padding:10px 0 10px 15px;width:65%;vertical-align:middle">
-                <a href="https://www.sciencedirect.com/science/article/abs/pii/S136655452500479X">
-                  <span class="papertitle">Optimizing charging station locations for mixed traffic of electric and gasoline vehicles: a stochastic user equilibrium approach</span>
-                </a>
-                <br>
-                Bing Zeng, Xinlian Yu, <strong>Zihao Zhang</strong>, Ziyuan Pu.
-                <br>
-                <em>Transportation Research Part E: Logistics and Transportation Review</em>, 2025
-                <br>
-                <div class="publication-links">
-                  <a href="https://www.sciencedirect.com/science/article/abs/pii/S136655452500479X">
-                      <img src="https://img.shields.io/badge/Paper-00629B?style=flat&amp;logoColor=white"
-                          alt="paper" height="20">
-                  </a>
-                </div>
-              </td>
-            </tr>
-
-            <!-- Behavior Paper 2 -->
-            <tr>
-              <td style="padding:10px 15px 10px 0;width:35%;vertical-align:middle">
-                <img src="images/FDR_2_speeding.jpg" style="width:100%;border:1px solid #d4d0c5;" alt="Identification of speeding behaviour factors for food delivery e-bikers teaser">
-              </td>
-              <td style="padding:10px 0 10px 15px;width:65%;vertical-align:middle">
-                <a href="https://www.tandfonline.com/doi/full/10.1080/10803548.2024.2393027">
-                  <span class="papertitle">Identification of the factors influencing speeding behaviour of food delivery e-bikers in China with the naturalistic cycling data</span>
-                </a>
-                <br>
-                <strong>Zihao Zhang</strong> and Chenhui Liu.
-                <br>
-                <em>International Journal of Occupational Safety and Ergonomics</em>, 2025
-                <br>
-                <div class="publication-links">
-                  <a href="https://www.tandfonline.com/doi/full/10.1080/10803548.2024.2393027">
-                      <img src="https://img.shields.io/badge/Paper-00629B?style=flat&amp;logoColor=white"
-                          alt="paper" height="20">
-                  </a>
-                </div>
-              </td>
-            </tr>
-
-            <!-- Behavior Paper 3 -->
-            <tr>
-              <td style="padding:10px 15px 10px 0;width:35%;vertical-align:middle">
-                <img src="images/PA_hou.png" style="width:100%;border:1px solid #d4d0c5;" alt="Exploration of elderly-driver-involved SVHFO crashes in Pennsylvania teaser">
-              </td>
-              <td style="padding:10px 0 10px 15px;width:65%;vertical-align:middle">
-                <a href="https://www.mdpi.com/2076-3417/14/19/8625">
-                <span class="papertitle">Exploration of the Characteristics of Elderly-Driver-Involved Single-Vehicle Hit-Fixed-Object Crashes in Pennsylvania, USA</span>
-                </a>
-                <br>
-                Xuerui Hou, <strong>Zihao Zhang</strong>, Xue Su, Chenhui Liu.
-                <br>
-                <em>Applied Sciences</em>, 2025
-                <br>
-                <div class="publication-links">
-                  <a href="https://www.mdpi.com/2076-3417/14/19/8625">
-                      <img src="https://img.shields.io/badge/Paper-00629B?style=flat&amp;logoColor=white"
-                          alt="paper" height="20">
-                  </a>
-                </div>
-              </td>
-            </tr>
-
-            <!-- Behavior Paper 4 -->
-            <tr>
-              <td style="padding:10px 15px 10px 0;width:35%;vertical-align:middle">
-                <img src="images/PA_elder.png" style="width:100%;border:1px solid #d4d0c5;" alt="Exploration of the Heterogeneity Among Elderly Drivers teaser">
-              </td>
-              <td style="padding:10px 0 10px 15px;width:65%;vertical-align:middle">
-                <a href="https://doi.org/10.4271/09-12-03-0008">
-                  <span class="papertitle">Exploration of the Heterogeneity among Elderly Drivers by Analyzing Traffic Crash Data: A Case Study in Pennsylvania, USA</span>
-                </a>
-                <br>
-                <strong>Zihao Zhang</strong> and Chenhui Liu.
-                <br>
-                <em>SAE International</em>, 2024
-                <br>
-                <div class="publication-links">
-                  <a href="https://doi.org/10.4271/09-12-03-0008">
-                      <img src="https://img.shields.io/badge/Paper-00629B?style=flat&amp;logoColor=white"
-                          alt="paper" height="20">
-                  </a>
-                </div>
-              </td>
-            </tr>
-
-            <!-- Behavior Paper 5 -->
-            <tr>
-              <td style="padding:10px 15px 10px 0;width:35%;vertical-align:middle">
-                <img src="images/FDR_1.png" style="width:100%;border:1px solid #d4d0c5;" alt="Exploration of Riding Behaviors of Food Delivery Riders teaser">
-              </td>
-              <td style="padding:10px 0 10px 15px;width:65%;vertical-align:middle">
-                <a href="https://doi.org/10.3390/su152316227">
-                  <span class="papertitle">Exploration of Riding Behaviors of Food Delivery Riders: A Naturalistic Cycling Study in Changsha, China</span>
-                </a>
-                <br>
-                <strong>Zihao Zhang</strong> and Chenhui Liu.
-                <br>
-                <em>Sustainability</em>, 2023
-                <br>
-                <div class="publication-links">
-                  <a href="https://doi.org/10.3390/su152316227">
-                      <img src="https://img.shields.io/badge/Paper-00629B?style=flat&amp;logoColor=white"
-                          alt="paper" height="20">
-                  </a>
-                </div>
-              </td>
-            </tr>
-
-            <!-- Behavior Paper 6 -->
-            <tr>
-              <td style="padding:10px 15px 10px 0;width:35%;vertical-align:middle">
-                <img src="images/NHTS.jpg" style="width:100%;border:1px solid #d4d0c5;" alt="Why the Elderly Do Not Travel teaser">
-              </td>
-              <td style="padding:10px 0 10px 15px;width:65%;vertical-align:middle">
-                <a href="https://doi.org/10.1061/9780784485040.053">
-                  <span class="papertitle">Why the Elderly Do Not Travel: An Analysis Based on the 2017 NHTS Data</span>
-                </a>
-                <br>
-                <strong>Zihao Zhang</strong> and Chenhui Liu.
-                <br>
-                <em>CICTP</em>, 2023
-                <br>
-                <div class="publication-links">
-                  <a href="https://doi.org/10.1061/9780784485040.053">
-                      <img src="https://img.shields.io/badge/Paper-00629B?style=flat&amp;logoColor=white"
-                          alt="paper" height="20">
-                  </a>
-                </div>
-              </td>
-            </tr>
-
-          </tbody>
-        </table>
-
-        <!-- Research Interests -->
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-          <tbody>
-            <tr>
-              <td style="padding:20px;width:100%;vertical-align:middle">
-                <h2>Research</h2>
-                <p>
-                  My research interests span several areas in Embodied AI and Autonomous Driving:
-                </p>
-                <ul>
-                  <li><strong>World Action Models:</strong> 3D or 4D world action models for autonomous driving or embodied AI.</li>
-                  <li><strong>Deep Reinforcement Learning:</strong> Post-training methods that learn safety boundaries for physical AI.</li>
-                  <li><strong>Agent Harness for Physical World:</strong> Adapting coding-agent harnesses to physical tasks such as driving and manipulation.</li>
-                </ul>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-
-        <!-- Footer -->
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;margin-top:40px;">
-          <tbody>
-            <tr>
-              <td style="padding:20px 0;border-top:1px solid #d4d0c5;">
-                <p style="text-align:center;font-size:13px;color:#7f8c8d;font-style:italic;">
-                  Design and source code from <a href="https://github.com/jonbarron/jonbarron_website">Jon Barron's website</a>
-                  <br>
-                  Last updated: October 2026
-                </p>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-
-      </td>
-    </tr>
-  </tbody>
-</table>
-
-<script>
-function toggleBibtex(id) {
-  var x = document.getElementById(id);
-  if (x.classList.contains('open')) {
-    x.classList.remove('open');
-  } else {
-    x.style.display = 'block';
-    requestAnimationFrame(function() {
-      requestAnimationFrame(function() { x.classList.add('open'); });
-    });
-    return;
-  }
-  x.addEventListener('transitionend', function handler() {
-    if (!x.classList.contains('open')) x.style.display = 'none';
-    x.removeEventListener('transitionend', handler);
-  });
-}
-</script>
-
+  <footer class="site-footer container">
+    <div><a class="footer-name" href="mailto:zihao_zhang@seu.edu.cn">Let's connect <span aria-hidden="true">↗</span></a><p>zihao_zhang@seu.edu.cn</p></div>
+    <div class="footer-meta"><p>Updated <time datetime="2026-11-13">November 2026</time> · <a href="#top">Back to top ↑</a></p><p>Original site inspired by <a href="https://github.com/jonbarron/jonbarron_website">Jon Barron</a>.</p></div>
+  </footer>
 </body>
 </html>

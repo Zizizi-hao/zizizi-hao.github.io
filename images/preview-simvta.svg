@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" role="img" aria-labelledby="title desc">
+  <title id="title">SimVTA — aligning video and trajectories</title>
+  <desc id="desc">Conceptual illustration of three ordered driving video frames connected to three points along a matching trajectory. It represents video-trajectory alignment and does not depict real generated footage or an experimental result.</desc>
+  <defs>
+    <clipPath id="frame-a"><rect x="48" y="139" width="265" height="212" rx="15"/></clipPath>
+    <clipPath id="frame-b"><rect x="348" y="139" width="265" height="212" rx="15"/></clipPath>
+    <clipPath id="frame-c"><rect x="648" y="139" width="265" height="212" rx="15"/></clipPath>
+    <g id="driving-scene">
+      <rect width="265" height="212" fill="#d9e4e4"/>
+      <path d="M0 89 40 74V45H77V104ZM265 91 220 74V32H186V106Z" fill="#b6c9c8"/>
+      <path d="M0 115H70V72H101V115ZM265 115H202V80H170V115Z" fill="#c5d5d0"/>
+      <path d="M102 100H163L276 212H-11Z" fill="#aebdb9"/>
+      <path d="M116 107 74 212M149 107 198 212" stroke="#f4f5ee" stroke-width="3"/>
+      <path d="M132 108V123M132 138V163M132 181V212" stroke="#f4f5ee" stroke-width="4"/>
+      <path d="M156 207C155 178 149 148 144 123" stroke="#237b6c" stroke-width="4" stroke-linecap="round" fill="none"/>
+    </g>
+    <g id="small-car">
+      <path d="M0 13 7 0H34L43 13V35H0Z" fill="#343b7b"/>
+      <path d="M10 4H30L35 14H5Z" fill="#c4cde2"/>
+      <path d="M5 23H11M32 23H38" stroke="#f6f7ef" stroke-width="3" stroke-linecap="round"/>
+    </g>
+  </defs>
+  <rect width="960" height="600" fill="#edf2ee"/>
+  <g font-family="Arial, Helvetica, sans-serif">
+    <text x="48" y="61" fill="#343b7b" font-size="31" font-weight="700" letter-spacing="-.7">SimVTA</text>
+    <text x="912" y="58" fill="#757b80" font-size="17" text-anchor="end" letter-spacing="2">VIDEO ↔ TRAJECTORY</text>
+    <g clip-path="url(#frame-a)"><g transform="translate(48 139)"><use href="#driving-scene"/><use href="#small-car" x="85" y="134"/></g></g>
+    <g clip-path="url(#frame-b)"><g transform="translate(348 139)"><use href="#driving-scene"/><use href="#small-car" transform="translate(90 127) scale(.86)"/></g></g>
+    <g clip-path="url(#frame-c)"><g transform="translate(648 139)"><use href="#driving-scene"/><use href="#small-car" transform="translate(98 121) scale(.72)"/></g></g>
+    <g fill="#f8faf5" stroke="#e1e7df" stroke-width="1">
+      <rect x="62" y="152" width="48" height="29" rx="14"/>
+      <rect x="362" y="152" width="48" height="29" rx="14"/>
+      <rect x="662" y="152" width="48" height="29" rx="14"/>
+    </g>
+    <g fill="#60736d" font-size="15" font-weight="600" text-anchor="middle"><text x="86" y="172">t₁</text><text x="386" y="172">t₂</text><text x="686" y="172">t₃</text></g>
+    <path d="M324 244H337M331 238 337 244 331 250M624 244H637M631 238 637 244 631 250" fill="none" stroke="#849c95" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M180 352V456M480 352V434M780 352V401" fill="none" stroke="#94b1a5" stroke-width="2" stroke-dasharray="5 7"/>
+    <path d="M96 466C240 466 324 452 480 434S680 413 855 383" fill="none" stroke="#237b6c" stroke-width="26" stroke-opacity=".08" stroke-linecap="round"/>
+    <path d="M96 466C240 466 324 452 480 434S680 413 855 383" fill="none" stroke="#237b6c" stroke-width="5" stroke-linecap="round"/>
+    <g fill="#f6f8f2" stroke="#237b6c" stroke-width="4"><circle cx="180" cy="464" r="9"/><circle cx="480" cy="434" r="9"/><circle cx="780" cy="396" r="9"/></g>
+    <text x="99" y="507" fill="#537368" font-size="18" font-weight="600">One consistent future</text>
+    <path d="M48 535H912" stroke="#d3dfd5"/>
+    <circle cx="56" cy="565" r="5" fill="#343b7b"/>
+    <text x="73" y="571" font-size="18" fill="#5e6c64">Simulation-grounded alignment</text>
+    <text x="912" y="571" font-size="18" fill="#5e6c64" text-anchor="end">Connect what is seen and done.</text>
+  </g>
+</svg>

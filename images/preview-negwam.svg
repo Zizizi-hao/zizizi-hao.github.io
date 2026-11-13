@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" role="img" aria-labelledby="title desc">
+  <title id="title">NegWAM — learning from negative trajectories</title>
+  <desc id="desc">Conceptual illustration of an ego vehicle approaching an intersection. A green trajectory turns away from a coral negative trajectory that approaches another vehicle. This illustration does not depict an experimental result.</desc>
+  <defs>
+    <marker id="arrow-green" markerWidth="9" markerHeight="9" refX="5" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 8 4 0 8" fill="none" stroke="#237b6c" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></marker>
+    <pattern id="crosswalk" width="19" height="12" patternUnits="userSpaceOnUse"><rect width="10" height="12" fill="#fbfbf7"/></pattern>
+  </defs>
+  <rect width="960" height="600" fill="#f1f2ed"/>
+  <g font-family="Arial, Helvetica, sans-serif">
+    <text x="48" y="61" fill="#343b7b" font-size="31" font-weight="700" letter-spacing="-.7">NegWAM</text>
+    <text x="912" y="58" fill="#757b80" font-size="17" text-anchor="end" letter-spacing="2">SAFETY LEARNING</text>
+    <g>
+      <path d="M48 146H344V224H48ZM584 146H912V224H584ZM48 415H344V483H48ZM584 415H912V483H584Z" fill="#e0e5db"/>
+      <rect x="371" y="123" width="186" height="383" rx="9" fill="#d7dcda"/>
+      <rect x="48" y="248" width="864" height="143" rx="9" fill="#d7dcda"/>
+      <g fill="none" stroke="#fafbf6" stroke-width="3">
+        <path d="M48 319H350M581 319H912" stroke-dasharray="17 17"/>
+        <path d="M464 123V227M464 415V506" stroke-dasharray="17 17"/>
+        <path d="M48 237H347Q359 237 359 223V123M569 123V223Q569 237 584 237H912M48 402H347Q359 402 359 417V506M569 506V417Q569 402 584 402H912" stroke-width="4"/>
+      </g>
+      <rect x="382" y="226" width="164" height="12" fill="url(#crosswalk)"/>
+      <rect x="382" y="403" width="164" height="12" fill="url(#crosswalk)"/>
+      <path d="M271 351H662" fill="none" stroke="#c86c5d" stroke-width="5" stroke-linecap="round" stroke-dasharray="12 11"/>
+      <path d="M272 351H372C435 351 510 345 510 281V169" fill="none" stroke="#237b6c" stroke-width="24" stroke-opacity=".10" stroke-linecap="round"/>
+      <path d="M272 351H372C435 351 510 345 510 281V169" fill="none" stroke="#237b6c" stroke-width="6" stroke-linecap="round" marker-end="url(#arrow-green)"/>
+      <g transform="translate(182 327)">
+        <rect x="-5" y="-4" width="94" height="56" rx="17" fill="#343b7b" fill-opacity=".10"/>
+        <rect width="84" height="48" rx="13" fill="#343b7b"/>
+        <rect x="21" y="6" width="37" height="36" rx="7" fill="#b8c2dd"/>
+        <rect x="64" y="10" width="9" height="28" rx="3" fill="#8d9bc2"/>
+        <path d="M76 12V36" stroke="#edf0f9" stroke-width="3" stroke-linecap="round"/>
+      </g>
+      <g transform="translate(690 327)">
+        <rect width="84" height="48" rx="13" fill="#8d9696"/>
+        <rect x="21" y="6" width="37" height="36" rx="7" fill="#c6cecc"/>
+        <rect x="64" y="10" width="9" height="28" rx="3" fill="#adb8b6"/>
+      </g>
+      <circle cx="651" cy="351" r="19" fill="#f5ded6"/>
+      <path d="M645 345 657 357M657 345 645 357" fill="none" stroke="#b75b4c" stroke-width="3" stroke-linecap="round"/>
+      <text x="535" y="185" font-size="20" font-weight="600" fill="#237b6c">selected</text>
+      <text x="613" y="298" font-size="20" font-weight="600" fill="#ad5f51">negative</text>
+    </g>
+    <path d="M48 535H912" stroke="#d7dcd4"/>
+    <circle cx="56" cy="565" r="5" fill="#343b7b"/>
+    <text x="73" y="571" font-size="18" fill="#5e6867">World-action models</text>
+    <text x="912" y="571" font-size="18" fill="#5e6867" text-anchor="end">Learn from near misses.</text>
+  </g>
+</svg>

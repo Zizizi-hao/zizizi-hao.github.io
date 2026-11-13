@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" role="img" aria-labelledby="title desc">
+  <title id="title">ViRA — connecting visual representation and planning</title>
+  <desc id="desc">Conceptual illustration connecting a forward driving scene, abstract visual features, and a planned trajectory in a bird's-eye view. The feature shapes are illustrative and are not measured activations or experimental results.</desc>
+  <defs>
+    <clipPath id="scene-clip"><rect x="48" y="135" width="395" height="332" rx="18"/></clipPath>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="7" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M1 1 7 5 1 9" fill="none" stroke="#737e9b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></marker>
+  </defs>
+  <rect width="960" height="600" fill="#edf0f5"/>
+  <g font-family="Arial, Helvetica, sans-serif">
+    <text x="48" y="61" fill="#343b7b" font-size="31" font-weight="700" letter-spacing="-.7">ViRA</text>
+    <text x="912" y="58" fill="#757b80" font-size="17" text-anchor="end" letter-spacing="2">REPRESENTATION → ACTION</text>
+    <g clip-path="url(#scene-clip)">
+      <rect x="48" y="135" width="395" height="332" fill="#dce5ea"/>
+      <path d="M48 266 132 213 132 167 193 167 193 274ZM298 266V185H354V225L443 268V467H298Z" fill="#c1cbd1"/>
+      <path d="M60 225H96V283H60ZM363 178H403V284H363Z" fill="#ccd6da"/>
+      <path d="M198 262H290L464 467H18Z" fill="#aeb9bd"/>
+      <path d="M232 274 156 467M260 274 339 467" stroke="#f0f1ec" stroke-width="4"/>
+      <path d="M246 276V303M246 323V363M246 397V451" stroke="#eff0eb" stroke-width="5"/>
+      <path d="M293 290V467" stroke="#237b6c" stroke-width="55" stroke-opacity=".10"/>
+      <path d="M287 448C280 385 272 339 265 299" stroke="#237b6c" stroke-width="5" stroke-linecap="round"/>
+      <g transform="translate(165 322)">
+        <path d="M2 20 13 0H52L66 20V52H0V23Z" fill="#343b7b"/>
+        <path d="M17 6H48L55 21H9Z" fill="#c2cce3"/>
+        <path d="M7 34H17M49 34H59" stroke="#f1f3f4" stroke-width="4" stroke-linecap="round"/>
+        <path d="M3 47H63" stroke="#262f5e" stroke-width="6"/>
+      </g>
+      <g transform="translate(283 280) scale(.65)">
+        <path d="M2 20 13 0H52L66 20V52H0V23Z" fill="#808d96"/>
+        <path d="M17 6H48L55 21H9Z" fill="#d5dee3"/>
+        <path d="M7 34H17M49 34H59" stroke="#f1f3f4" stroke-width="4" stroke-linecap="round"/>
+      </g>
+      <rect x="149" y="311" width="98" height="79" rx="10" fill="none" stroke="#5a6da7" stroke-width="2.5"/>
+      <rect x="276" y="273" width="57" height="49" rx="6" fill="none" stroke="#5a6da7" stroke-width="2"/>
+      <rect x="65" y="152" width="115" height="32" rx="16" fill="#f7f8fa" fill-opacity=".88"/>
+      <text x="122" y="174" text-anchor="middle" fill="#536272" font-size="16" font-weight="600">Visual input</text>
+    </g>
+    <path d="M461 302H507" stroke="#737e9b" stroke-width="2.5" marker-end="url(#arrow)"/>
+    <g transform="translate(529 218)">
+      <rect x="0" y="17" width="44" height="146" rx="10" fill="#d4daeb"/>
+      <rect x="13" y="7" width="44" height="146" rx="10" fill="#b6c1df"/>
+      <rect x="26" y="-3" width="44" height="146" rx="10" fill="#8395c1"/>
+      <path d="M42 20H54M42 45H54M42 70H54M42 95H54M42 120H54" stroke="#d9e1f2" stroke-width="5" stroke-linecap="round"/>
+      <text x="37" y="188" text-anchor="middle" fill="#69748b" font-size="17">Features</text>
+    </g>
+    <path d="M617 302H656" stroke="#737e9b" stroke-width="2.5" marker-end="url(#arrow)"/>
+    <g>
+      <rect x="678" y="135" width="234" height="332" rx="18" fill="#f9faf8"/>
+      <path d="M723 155V448M870 155V448" stroke="#d9dfda" stroke-width="3"/>
+      <path d="M796 155V448" stroke="#d9dfda" stroke-width="3" stroke-dasharray="11 12"/>
+      <rect x="745" y="236" width="29" height="51" rx="7" fill="#abb8c6"/>
+      <rect x="819" y="186" width="29" height="48" rx="7" fill="#c0c9ce"/>
+      <path d="M809 408C809 365 832 340 833 301V258" fill="none" stroke="#237b6c" stroke-width="20" stroke-opacity=".10"/>
+      <path d="M809 408C809 365 832 340 833 301V258" fill="none" stroke="#237b6c" stroke-width="5" stroke-linecap="round"/>
+      <circle cx="833" cy="258" r="6" fill="#237b6c"/>
+      <rect x="793" y="391" width="32" height="52" rx="8" fill="#343b7b"/>
+      <rect x="799" y="400" width="20" height="21" rx="4" fill="#c0cce7"/>
+      <text x="795" y="174" text-anchor="middle" fill="#536272" font-size="16" font-weight="600">Planning</text>
+    </g>
+    <path d="M48 535H912" stroke="#d5dce5"/>
+    <circle cx="56" cy="565" r="5" fill="#343b7b"/>
+    <text x="73" y="571" font-size="18" fill="#5e686f">Visual representation alignment</text>
+    <text x="912" y="571" font-size="18" fill="#5e686f" text-anchor="end">From perception to planning.</text>
+  </g>
+</svg>

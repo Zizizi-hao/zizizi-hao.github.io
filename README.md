@@ -1,15 +1,32 @@
-# zihao's Personal Website
+# Zihao's Personal Website
 
-> Hi~ I am zihao, a Ph.D. and a PM for myself.
+Research on world-action models, safety-oriented learning, and autonomous driving.
 
-This is my personal academic website: [zizizi-hao.github.io](https://zizizi-hao.github.io)
+Personal academic website: [zizizi-hao.github.io](https://zizizi-hao.github.io)
 
 ## Structure
 
-- `index.html` - Main page (about me + publications)
-- `stylesheet.css` - Minimal style
-- `images/` - Photos
+- `index.html` — Research introduction, selected work, news, all publications, and background
+- `stylesheet.css` — Responsive layout, typography, and accessible interaction styles
+- `images/` — Original figures, portrait, and SVG concept illustrations
+
+## Local preview
+
+No build step or external dependencies are required. Open `index.html` in a browser, or run:
+
+```sh
+python3 -m http.server 8000
+```
+
+Then visit `http://localhost:8000`. GitHub Pages serves the repository files directly.
+
+## Updating content
+
+- Keep full titles, authors, venues, and links in Publications.
+- Use Selected work for short descriptions of representative projects.
+- The `preview-*.svg` images are concept illustrations, not experimental results. Original figures remain in the publication list and open at full size when selected.
+- Update news and the footer date together. Earlier news is kept in a native disclosure section.
 
 ## Credits
 
-Template from [Jon Barron](https://github.com/jonbarron/jonbarron_website).
+The original site was based on [Jon Barron's academic website](https://github.com/jonbarron/jonbarron_website). The current layout and concept illustrations are customized for this research portfolio.
